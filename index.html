@@ -7,7 +7,7 @@
         <title>Insurance that stays calm · Ankerhuis</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Newsreader:opsz,wght@6..72,500&display=swap" />
         <link rel="stylesheet" href="site.css" />
         <script src="site.js" defer></script>
     </head>
@@ -17,8 +17,9 @@
             <a class="logo" href="./">anker<span>huis</span>.</a>
             <nav aria-label="Insurance">
                 <a href="car.html">Car</a>
-                <a href="home.html">Home & contents</a>
+                <a href="home.html">Home &amp; contents</a>
                 <a href="travel.html">Travel</a>
+                <a href="claims.html">Claims</a>
             </nav>
             <a class="cta light" href="claims.html">Report a claim</a>
         </header>
@@ -28,18 +29,77 @@
                     <span class="eyebrow">Car · Home · Travel</span>
                     <h1>Insurance that stays calm when you can't.</h1>
                     <p class="lead">Clear cover for the things that matter, and a claims team that picks up. Ask Buzz anything about your policy, day and night.</p>
-                    <a class="cta" href="car.html">See car insurance</a>
+                    <div class="actions">
+                        <a class="cta" href="car.html">See car insurance</a>
+                        <a class="cta light" href="claims.html">Report a claim</a>
+                    </div>
                 </div>
-                <div class="badge"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#14304a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="12" r="5"/><path d="M32 17v38M20 26h24M12 38c2 10 10 17 20 17s18-7 20-17"/><path d="M8 40l4-4 4 4M48 40l4-4 4 4"/></g></svg></div>
+                <div class="hero-photo">
+                    <img src="https://images.unsplash.com/photo-1758272422081-20d29fb67365?w=1400&q=72&auto=format&fit=crop" alt="A woman relaxing at home with her phone and a mug" />
+                    <div class="hero-note">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z" /></svg>
+                        <span><strong>Buzz answers right away</strong><br />Policies, invoices and claims, at any hour.</span>
+                    </div>
+                </div>
             </section>
-            <section class="cards" aria-label="Our insurance">
-                <a class="card" href="car.html"><h3>Car insurance</h3><p>Third party, third party plus or all risk. Windscreen repair at a partner garage without deductible.</p><span class="from">From €39 per month</span></a>
-                <a class="card" href="home.html"><h3>Home &amp; contents</h3><p>Your house and everything in it, from a burst pipe to a break-in. Liability for the whole family.</p><span class="from">From €12 per month</span></a>
-                <a class="card" href="travel.html"><h3>Travel insurance</h3><p>Continuous cover in Europe or worldwide, for you alone or the whole family.</p><span class="from">From €4 per month</span></a>
+            <div class="usps">
+                <div class="usp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+                    <strong>Day and night</strong>
+                    <span>Buzz answers in the chat, any time</span>
+                </div>
+                <div class="usp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 3H8z" /><rect x="5" y="7" width="14" height="13" rx="2" /><path d="M9 13h6M9 16h4" /></svg>
+                    <strong>Report a claim online</strong>
+                    <span>We start straight away</span>
+                </div>
+                <div class="usp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15l2-6h14l2 6v3H3z" /><circle cx="7.5" cy="18" r="1.5" /><circle cx="16.5" cy="18" r="1.5" /><path d="M6 9l1.5-3h9L18 9" /></svg>
+                    <strong>Windscreen without deductible</strong>
+                    <span>Repair at one of our partner garages</span>
+                </div>
+                <div class="usp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z" /><path d="m9 12 2 2 4-4" /></svg>
+                    <strong>Keep your claim-free years</strong>
+                    <span>They come with you when you switch</span>
+                </div>
+            </div>
+            <section aria-labelledby="cover-title">
+                <div class="section-head"><h2 id="cover-title">What would you like to insure?</h2></div>
+                <div class="cards">
+                    <a class="card" href="car.html">
+                        <div class="photo"><img src="https://images.unsplash.com/photo-1593382805742-7c1cd5bdeb36?w=900&q=70&auto=format&fit=crop" alt="A car on a country road between the trees" loading="lazy" /></div>
+                        <div class="card-body">
+                            <h3>Car insurance</h3>
+                            <p>Third party, third party plus or all risk. Windscreen repair at a partner garage without deductible.</p>
+                            <span class="from">From €39 per month</span>
+                        </div>
+                    </a>
+                    <a class="card" href="home.html">
+                        <div class="photo"><img src="https://images.unsplash.com/photo-1718891830165-6c85e943d083?w=900&q=70&auto=format&fit=crop" alt="The front door of a brick house" loading="lazy" /></div>
+                        <div class="card-body">
+                            <h3>Home &amp; contents</h3>
+                            <p>Your house and everything in it, from a burst pipe to a break-in. Liability for the whole family.</p>
+                            <span class="from">From €12 per month</span>
+                        </div>
+                    </a>
+                    <a class="card" href="travel.html">
+                        <div class="photo"><img src="https://images.unsplash.com/photo-1523225918988-00624e6d8fee?w=900&q=70&auto=format&fit=crop" alt="Two travellers with suitcases looking out over the sea" loading="lazy" /></div>
+                        <div class="card-body">
+                            <h3>Travel insurance</h3>
+                            <p>Continuous cover in Europe or worldwide, for you alone or the whole family.</p>
+                            <span class="from">From €4 per month</span>
+                        </div>
+                    </a>
+                </div>
             </section>
             <section class="band">
-                <div><h2>Something happened?</h2><p>Report damage online or tell Buzz what happened. We start straight away.</p></div>
-                <a class="cta light" href="claims.html">Report a claim</a>
+                <div>
+                    <h2>Something happened?</h2>
+                    <p>Report damage online or tell Buzz what happened. Our claims team starts straight away and keeps you posted.</p>
+                    <a class="cta warm" href="claims.html">Report a claim</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1756312177615-e153c9db507d?w=1200&q=70&auto=format&fit=crop" alt="A woman on the phone in her kitchen" loading="lazy" />
             </section>
             <section class="try">
                 <h2>Try Buzz</h2>
@@ -53,6 +113,14 @@
                 </ul>
             </section>
         </main>
-        <footer>Ankerhuis is a demo insurer for Neople Chat. Nothing on this site is a real offer.</footer>
+        <footer>
+            <div class="cols">
+                <div><a class="logo" href="./">anker<span>huis</span>.</a><p>Insurance that stays calm when you can't.</p></div>
+                <div><strong>Insurance</strong><a href="car.html">Car</a><a href="home.html">Home &amp; contents</a><a href="travel.html">Travel</a></div>
+                <div><strong>Claims</strong><a href="claims.html">Report a claim</a><a href="claims.html">What to have ready</a></div>
+                <div><strong>Help</strong><span>Buzz in the chat</span><span>Day and night</span></div>
+            </div>
+            <p class="fine">Ankerhuis is a demo insurer for Neople Chat. Nothing on this site is a real offer.</p>
+        </footer>
     </body>
 </html>

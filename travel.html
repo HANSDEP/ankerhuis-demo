@@ -7,7 +7,7 @@
         <title>Travel insurance · Ankerhuis</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Newsreader:opsz,wght@6..72,500&display=swap" />
         <link rel="stylesheet" href="site.css" />
         <script src="site.js" defer></script>
     </head>
@@ -17,15 +17,21 @@
             <a class="logo" href="./">anker<span>huis</span>.</a>
             <nav aria-label="Insurance">
                 <a href="car.html">Car</a>
-                <a href="home.html">Home & contents</a>
+                <a href="home.html">Home &amp; contents</a>
                 <a href="travel.html" aria-current="page">Travel</a>
+                <a href="claims.html">Claims</a>
             </nav>
             <a class="cta light" href="claims.html">Report a claim</a>
         </header>
         <main>
-            <span class="eyebrow">Travel insurance</span>
-            <h1>Go away, worry less.</h1>
-            <p class="lead">Continuous travel insurance covers every trip of the year, so you never have to arrange it before you leave.</p>
+            <section class="pagehead">
+                <div>
+                    <span class="eyebrow">Travel insurance</span>
+                    <h1>Go away, worry less.</h1>
+                    <p class="lead">Continuous travel insurance covers every trip of the year, so you never have to arrange it before you leave.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1772466669620-310c35f9deb2?w=1200&q=70&auto=format&fit=crop" alt="A couple loading their luggage into the car" />
+            </section>
             <table>
                 <thead><tr><th>Area</th><th>What it covers</th></tr></thead>
                 <tbody>
@@ -39,6 +45,14 @@
             </div>
             <a class="cta" href="claims.html">Report travel damage</a>
         </main>
-        <footer>Ankerhuis is a demo insurer for Neople Chat. Nothing on this site is a real offer.</footer>
+        <footer>
+            <div class="cols">
+                <div><a class="logo" href="./">anker<span>huis</span>.</a><p>Insurance that stays calm when you can't.</p></div>
+                <div><strong>Insurance</strong><a href="car.html">Car</a><a href="home.html">Home &amp; contents</a><a href="travel.html">Travel</a></div>
+                <div><strong>Claims</strong><a href="claims.html">Report a claim</a><a href="claims.html">What to have ready</a></div>
+                <div><strong>Help</strong><span>Buzz in the chat</span><span>Day and night</span></div>
+            </div>
+            <p class="fine">Ankerhuis is a demo insurer for Neople Chat. Nothing on this site is a real offer.</p>
+        </footer>
     </body>
 </html>

@@ -7,7 +7,7 @@
         <title>Report a claim · Ankerhuis</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Newsreader:opsz,wght@6..72,500&display=swap" />
         <link rel="stylesheet" href="site.css" />
         <script src="site.js" defer></script>
     </head>
@@ -17,16 +17,22 @@
             <a class="logo" href="./">anker<span>huis</span>.</a>
             <nav aria-label="Insurance">
                 <a href="car.html">Car</a>
-                <a href="home.html">Home & contents</a>
+                <a href="home.html">Home &amp; contents</a>
                 <a href="travel.html">Travel</a>
+                <a href="claims.html" aria-current="page">Claims</a>
             </nav>
             <a class="cta light" href="claims.html">Report a claim</a>
         </header>
         <main>
-            <span class="eyebrow">Report a claim</span>
-            <h1>We'll take it from here.</h1>
+            <section class="pagehead">
+                <div>
+                    <span class="eyebrow">Report a claim</span>
+                    <h1>We'll take it from here.</h1>
+                    <p class="lead">Tell us what happened, or ask Buzz in the chat to take in your claim. Our claims team reviews it and you receive a claim number by email.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1756312177615-e153c9db507d?w=1200&q=70&auto=format&fit=crop" alt="A woman on the phone in her kitchen" />
+            </section>
             <div class="alert"><strong>In danger?</strong> Call 112 first. For help on the road or abroad, call the emergency assistance number on your insurance card.</div>
-            <p class="lead">Tell us what happened, or ask Buzz in the chat to take in your claim. Our claims team reviews it and you receive a claim number by email.</p>
             <ol class="steps">
                 <li><div><strong>Limit further damage</strong><br />Where it's safe: turn off the water main, cover a broken window, move the car off the road.</div></li>
                 <li><div><strong>Gather what we need</strong><br />What happened, when and where, and photos of the damage.</div></li>
@@ -35,6 +41,14 @@
             </ol>
             <a class="cta" href="./">Back to home</a>
         </main>
-        <footer>Ankerhuis is a demo insurer for Neople Chat. Nothing on this site is a real offer.</footer>
+        <footer>
+            <div class="cols">
+                <div><a class="logo" href="./">anker<span>huis</span>.</a><p>Insurance that stays calm when you can't.</p></div>
+                <div><strong>Insurance</strong><a href="car.html">Car</a><a href="home.html">Home &amp; contents</a><a href="travel.html">Travel</a></div>
+                <div><strong>Claims</strong><a href="claims.html">Report a claim</a><a href="claims.html">What to have ready</a></div>
+                <div><strong>Help</strong><span>Buzz in the chat</span><span>Day and night</span></div>
+            </div>
+            <p class="fine">Ankerhuis is a demo insurer for Neople Chat. Nothing on this site is a real offer.</p>
+        </footer>
     </body>
 </html>
